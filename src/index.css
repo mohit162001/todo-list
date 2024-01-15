@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Salsa', cursive;
+}
+
+/* App.css */
+
+body {
+    /* Replace the colors and directions with your desired gradient values */
+    background: linear-gradient(to right, #ffcc00, #ff6666);
+    margin: 0; /* Remove default margin on body */
+    padding: 0; /* Remove default padding on body */
+    height: 100vh; /* Set height to 100% of the viewport height */
+    display: flex;
+    justify-content: center;
+    color: #fff; /* Set text color to white for better visibility on gradients */
+  }
+
+  main{
+    padding: 0;
+  }
+  

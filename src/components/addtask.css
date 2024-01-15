@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    background: linear-gradient(to right, #ffcc00, #ff6666);
+    font-family: Arial, sans-serif; /* Change the font-family if needed */
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: 20vh; /* Adjust the height as needed */
+}
+
+.input-field {
+    margin-bottom: 20px;
+  
+}
+
+input {
+
+    padding: 10px;
+    width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #e43737;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #b10303;
+}
+

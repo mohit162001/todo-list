@@ -1,0 +1,31 @@
+/* .task-container{
+    top: 10px;
+    align-items: baseline;
+}
+
+.list-item{
+    font-size: 2rem;
+    text-align:left;
+}
+
+
+#remove-btn{
+    color: #000;
+} */
+
+.task-container {
+    width: 100%; /* Adjust width as needed */
+  }
+  
+  .list-item {
+    display: flex;
+    font-size: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    border-bottom: 1px solid #b64b4b; /* Optional: add a border between items */
+  }
+  
+  button {
+    margin-left: 10px; /* Adjust margin as needed */
+  }
