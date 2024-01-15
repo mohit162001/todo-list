@@ -18,6 +18,16 @@ useEffect(() => {
   console.log(tasks)
   console.log("task", getInput); 
 
+  // useEffect(() => {
+  //   if (getInput) {
+  //     const newArr = [ ...tasks]
+  //     newArr.push(getInput)
+  //     setTasks(newArr);
+  //   }
+  // }, [getInput]);
+  // console.log(tasks)
+  // console.log("task", getInput); 
+
   return (
     <div className="task-container">
       <ol>
