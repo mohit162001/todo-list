@@ -14,18 +14,22 @@
 } */
 
 .task-container {
-    width: 100%; /* Adjust width as needed */
+    width: 100%; 
   }
-  
+  #message{
+    text-align: center;
+    padding: 1rem;
+  }
   .list-item {
     display: flex;
     font-size: 2rem;
     justify-content: space-between;
     align-items: center;
     padding: 8px;
-    border-bottom: 1px solid #b64b4b; /* Optional: add a border between items */
+    text-transform: capitalize;
+    border-bottom: 1px solid #b64b4b; 
   }
   
   button {
-    margin-left: 10px; /* Adjust margin as needed */
+    margin-left: 10px;
   }

@@ -1,31 +1,33 @@
-import React, { useState } from 'react'
+import React, { useRef} from 'react'
 import './addtask.css'
 
-function AddTask({sendInput}) {
-    const [userInput,setInput] = useState('');
+function AddTask({addTask}) {
+    const input =  useRef();
+    // const [userInput,setInput] = useState('');
 
 
-    function handleInput(event){
-        let enterInput = event.target.value
-        setInput(enterInput)
-        console.log(enterInput)
-    }
+    // function handleInput(event){
+    //     let enterInput = event.target.value
+    //     setInput(enterInput)
+    //     console.log(enterInput)
+    // }
 
     function handleInputField() {
-      sendInput(userInput)
-      setInput('');
+      addTask(input.current.value);
+      input.current.value = ''
+
     }
 
     function handleKeyDown(event) {
       if(event.key ==='Enter'){
-        sendInput(userInput)
-        setInput('')
+        addTask(input.current.value)
+        input.current.value = ''
       }
     }
   return (
     <div className='input-container'>
         <div className='input-field'>
-            <input type="text" value={userInput} onChange={handleInput} onKeyDown={handleKeyDown}/>
+            <input ref={input} type="text" onKeyDown={handleKeyDown}/>
         </div>
         <button onClick={handleInputField}>Add Task</button>
     </div>
